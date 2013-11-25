@@ -17,4 +17,4 @@ putenv('RESQUE=1');
 include realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'httpdocs'.DIRECTORY_SEPARATOR.'index.php');
 
 // Load Resque from vendor
-include Kohana::find_file('vendor/chrisboulton/php-resque', 'bin/resque', '');
+include Kohana::find_file('vendor/bin', 'resque', '');
