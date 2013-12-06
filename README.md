@@ -12,23 +12,17 @@ A Kohana module for queuing asynchronous tasks though php-resque.
 #### Install the module
 
 ```
-git submodule add git@github.com:dexamped/kohana-resque.git
-git submodule update --init
+git submodule add git@github.com:dexamped/kohana-resque.git modules/kohana-resque
+git submodule update --init --recursive
 ```
 
 #### Load dependencies
 
-Install php-resque with composer by updating your `composer.json`
+We have to load vendor's dependencies by running `composer install`
 
 ```
-"require": {
-	...
-	"chrisboulton/php-resque": "dev-master",
-	...
-}
+composer install --working-dir=modules/kohana-resque/vendor/php-resque
 ```
-
-and running `composer install`
 
 #### Configuration
 
@@ -42,7 +36,7 @@ Kohana::modules(array(
 ));
 ```
 
-See `MODPATH/kohana-resque/config/resque.php` for full configuration options.
+Copy the `modules/kohana-resque/config/resque.php` to `APPPATH/config/resque.php` and setup your config.
 
 #### Running workers
 
@@ -67,5 +61,5 @@ class Task_Test extends Task_Resque {
 
 ## Use with Minion
 
-Coming
+Documentation coming
 
