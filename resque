@@ -13,7 +13,7 @@ ob_start("clean_shebang");
 // Set the Resque environment flag to skip minion
 putenv('RESQUE=1');
 
-// Load Kohana
+// Load Kohana by including the applications index.php
 include realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'httpdocs'.DIRECTORY_SEPARATOR.'index.php');
 
 // Load Resque from vendor
