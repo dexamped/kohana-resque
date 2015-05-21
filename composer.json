@@ -1,7 +1,9 @@
 {
-    "name": "dexamped/kohana-resque",
-    "description": "Kohana wrapper for php-resque with minion support.",
-    "license": "BSD-3-Clause",
+    "name":         "dexamped/kohana-resque",
+    "description":  "Kohana wrapper for php-resque with minion support.",
+    "license":      "BSD-3-Clause",
+    "type":         "kohana-module",
+    "keywords":     ["resque", "kohana"],
     "authors": [
         {
             "name": "Chris",
@@ -12,8 +14,14 @@
     "bin": ["bin/kresque"],
     "minimum-stability": "dev",
     "require": {
-        "kohana/core":         ">=3.3",
-        "php":                 ">=5.3.3",
+        "composer/installers":     "~1.0",
+        "kohana/core":             ">=3.3",
+        "php":                     ">=5.3.3",
         "chrisboulton/php-resque": "dev-master"
+    },
+    "extra": {
+        "installer-paths": {
+            "vendor/{$vendor}/{$name}": ["type:kohana-module"]
+        }
     }
 }
