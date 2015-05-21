@@ -9,9 +9,7 @@
         }
     ],
     "bin": ["bin/resque"],
-    "minimum-stability": "dev",
     "require": {
-        "composer/installers": "~1.0",
         "kohana/core":         ">=3.3",
         "php":                 ">=5.3.3",
         "chrisboulton/php-resque": "dev-master"
