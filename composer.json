@@ -1,6 +1,7 @@
 {
     "name": "dexamped/kohana-resque",
     "description": "Kohana wrapper for php-resque with minion support.",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Chris",
