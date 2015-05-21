@@ -9,7 +9,7 @@
             "role": "developer"
         }
     ],
-    "bin": ["bin/resque"],
+    "bin": ["bin/kresque"],
     "minimum-stability": "dev",
     "require": {
         "kohana/core":         ">=3.3",
