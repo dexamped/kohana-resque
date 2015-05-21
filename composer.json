@@ -4,7 +4,8 @@
     "authors": [
         {
             "name": "Chris",
-            "email": "dexamped@gmail.com"
+            "email": "dexamped@gmail.com",
+            "role": "developer",
         }
     ],
     "bin": ["bin/resque"],
