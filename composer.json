@@ -11,7 +11,7 @@
             "role": "developer"
         }
     ],
-    "bin": ["bin/kresque"],
+    "bin": ["bin/resque"],
     "minimum-stability": "dev",
     "require": {
         "composer/installers":     "~1.0",
