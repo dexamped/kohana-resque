@@ -5,7 +5,7 @@
         {
             "name": "Chris",
             "email": "dexamped@gmail.com",
-            "role": "developer",
+            "role": "developer"
         }
     ],
     "bin": ["bin/resque"],
