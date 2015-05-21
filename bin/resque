@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+// Output buffer callback to remove unix shebang from CLI ouput
+function clean_shebang($buffer)
+{
+  return (str_replace("#!/usr/bin/env php\n", "", $buffer));
+}
+
+// Start our output buffer
+ob_start("clean_shebang");
+
+// Set the Resque environment flag to skip minion
+putenv('RESQUE=1');
+
+// Load Kohana by including the application index.php
+include realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'httpdocs'.DIRECTORY_SEPARATOR.'index.php');
+
+// Load Resque from vendor
+include Kohana::find_file('vendor', 'php-resque/bin/resque', '');
