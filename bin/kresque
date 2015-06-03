@@ -14,7 +14,7 @@ ob_start("clean_shebang");
 putenv('RESQUE=1');
 
 // Load Kohana by including the application index.php
-include realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'httpdocs'.DIRECTORY_SEPARATOR.'index.php');
+include realpath(dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'httpdocs'.DIRECTORY_SEPARATOR.'index.php');
 
 // Load Resque from vendor
 include Kohana::find_file('vendor', 'chrisboulton/php-resque/bin/resque', '');
